@@ -33,7 +33,7 @@ const Products = () => {
     }
 
     const filterProduct = (cat) => {
-        const updatedList = data.filter((x) => x.catogary === cat);
+        const updatedList = data.filter((x) => x.category === cat);
         setFilter(updatedList);
     }
 
@@ -42,10 +42,10 @@ const Products = () => {
             <>
                 <div className="buttons d-flex justify-content-center mb-5 pb-5">
                     <button className="btn btn-outline-dark me-2" onClick={() => setFilter(data)}>All</button>
-                    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("catagory 1")}>Catagory 1  </button>
-                    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("catagory 2")}>Catagory 2</button>
-                    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("catagory 3")}>Catagory 3</button>
-                    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("catagory 4")}>Catagory 4</button>
+                    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("men's clothing")}>Men's Clothing</button>
+                    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("women's clothing")}>Women's Clothing</button>
+                    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("jewelery")}>Jewelery</button>
+                    <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("electronics")}>Electronic </button>
                 </div>
                 {filter.map((product) => {
                     return (
@@ -58,7 +58,7 @@ const Products = () => {
                                         <p class="card-text lead fw-bold">
                                             $ {product.price}
                                         </p>
-                                        <a href="#" class="btn btn-outline-dark">Buy Now</a>
+                                        {/* <a href="#" class="btn btn-outline-dark">Buy Now</a> */}
                                     </div>
                                 </div>
                             </div>
