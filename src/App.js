@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import {Route,  Routes} from 'react-router-dom';
 
 import Products from './Components/Products';
+import Product from './Components/Product';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route  path="/" element={<Home/>}/>
         <Route  path="/products" element={<Products/>}/>
+        <Route  path="/product/:id" element={<Product/>}/>
       </Routes>
     </>
   );
