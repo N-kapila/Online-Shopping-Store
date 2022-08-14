@@ -7,7 +7,7 @@ export default function Navbar() {
     return (
         <div><nav className="navbar navbar-expand-lg bg-light bg-white py-3 shadow-sm">
             <div className="container">
-                <Link className="navbar-brand fw-bold fs-4" to="#">Chinan Store</Link>
+                <Link className="navbar-brand fw-bold fs-4" to="#">Smart Store</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
